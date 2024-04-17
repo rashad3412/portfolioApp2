@@ -20,6 +20,7 @@ const emailText = document.createElement("div");
 const aboutBox = document.querySelector(".about");
 const aboutText = document.querySelector(".about-p");
 const appIcon = document.querySelectorAll("#app");
+const devPosition = document.querySelector("#devPos");
 
 function lightTheme() {
   light.addEventListener("click", () => {
@@ -169,6 +170,15 @@ function appIconDisplayOut() {
   });
 }
 
+function pageLoad() {
+  setTimeout(() => {
+    devPosition.textContent = "Engineer.";
+  }, 0);
+  setTimeout(() => {
+    devPosition.textContent = "Developer.";
+  }, 4000);
+}
+
 phoneTextDisplay();
 phoneOutDisplay();
 emailTextDisplay();
@@ -179,3 +189,5 @@ appIconDisplay();
 appIconDisplayOut();
 lightTheme();
 darkTheme();
+
+setInterval(pageLoad, 6000);
