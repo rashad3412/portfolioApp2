@@ -177,6 +177,12 @@ function pageLoad() {
   setTimeout(() => {
     devPosition.textContent = "Developer.";
   }, 4000);
+  setTimeout(() => {
+    devPosition.textContent = "Enthusist.";
+  }, 8000);
+  setTimeout(() => {
+    devPosition.textContent = "Lover.";
+  }, 12000);
 }
 
 phoneTextDisplay();
@@ -190,4 +196,4 @@ appIconDisplayOut();
 lightTheme();
 darkTheme();
 
-setInterval(pageLoad, 6000);
+setInterval(pageLoad, 16000);
